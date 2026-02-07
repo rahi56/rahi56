@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahim | Creative Developer</title>
+
+    <!-- Meta -->
+    <meta name="description" content="Portfolio of Rahim, a Creative Developer specializing in modern web experiences.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <span class="logo-text text-gradient">Abdur Rahim</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link btn-contact" href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section position-relative overflow-hidden">
+        <div class="hero-bg-overlay"></div>
+        <div class="container h-100 d-flex align-items-center">
+            <div class="row w-100 align-items-center">
+                <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-duration="1000">
+                    <span class="greeting-badge mb-3 d-inline-block">👋 Hello, I'm Rahim</span>
+                    <h1 class="display-1 fw-bold mb-4">
+                        Creative <span class="text-gradient">Developer</span> & <br>
+                        UI/UX <span class="text-stroke">Designer</span>
+                    </h1>
+                    <p class="lead mb-5 text-secondary-light">
+                        I craft digital experiences that merge art with code. Building modern web applications with a
+                        focus on animation and user engagement.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#projects" class="btn btn-primary btn-lg custom-btn">View Work</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg custom-btn">Contact Me</a>
+                    </div>
+                </div>
+                <!-- Interactive 3D/Image Placeholder -->
+                <div class="col-lg-6 mt-5 mt-lg-0 text-center" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="hero-image-wrapper">
+                        <div class="blob-bg"></div>
+                        <img src="prfl.jpg" class="hero-img img-fluid rounded-4 shadow-lg position-relative"
+                            alt="Rahim Profile">
+
+                        <!-- Floating cards -->
+                        <div class="floating-card glass top-right">
+                            <i class="bi bi-code-slash text-primary fs-3"></i>
+                            <div>
+                                <span class="d-block fw-bold">Developer</span>
+                                <small class="text-muted">Clean Code</small>
+                            </div>
+                        </div>
+
+                        <div class="floating-card glass bottom-left">
+                            <i class="bi bi-palette text-warning fs-3"></i>
+                            <div>
+                                <span class="d-block fw-bold">Designer</span>
+                                <small class="text-muted">Pixel Perfect</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-down-indicator">
+            <span>Scroll</span>
+            <i class="bi bi-arrow-down short-bounce"></i>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="section-padding overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center g-lg-5">
+                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="about-image-wrapper">
+                        <div class="about-decoration"></div>
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop"
+                            class="about-img shadow-lg" alt="Workspace">
+
+                        <!-- Mini stats or info can go here -->
+                        <div class="floating-card glass position-absolute bottom-0 start-0 m-4">
+                            <i class="bi bi-award text-primary fs-3"></i>
+                            <div>
+                                <span class="d-block fw-bold">3rd Year</span>
+                                <small class="text-muted">ICT Student</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 ps-lg-5" data-aos="fade-left">
+                    <div class="about-card">
+                        <h5 class="text-primary text-uppercase letter-spacing-2 mb-3">About Me</h5>
+                        <h2 class="display-5 fw-bold mb-4">Passionate about <br> <span class="text-gradient">Solving
+                                Problems</span></h2>
+
+                        <p class="about-text">
+                            I am a passionate ICT student and aspiring software engineer with a deep love for building
+                            meaningful digital experiences.
+                        </p>
+
+                        <div class="accordion custom-accordion" id="aboutAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button"
+                                        data-bs-target="#collapseStory" data-bs-toggle="collapse">
+                                        <i class="bi bi-person-lines-fill me-3 text-primary"></i> My Story
+                                    </button>
+                                </h2>
+                                <div id="collapseStory" class="accordion-collapse collapse"
+                                    data-bs-parent="#aboutAccordion">
+                                    <div class="accordion-body">
+                                        Welcome to my personal webpage. I am a 3rd-year ICT student at Mawlana Bhashani
+                                        Science and Technology University. I have a strong interest in software
+                                        development, competitive programming, and emerging technologies. This portfolio
+                                        showcases my academic projects, technical skills, and professional journey as I
+                                        work towards becoming a skilled software engineer.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne">
+                                        <i class="bi bi-code-square me-3 text-primary"></i> Web Development
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#aboutAccordion">
+                                    <div class="accordion-body">
+                                        Specializing in frontend technologies like HTML5, CSS3, JavaScript, and
+                                        Bootstrap to
+                                        bring designs to life. I focus on creating responsive, performant, and
+                                        accessible web experiences.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding bg-darker">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h5 class="text-primary text-uppercase letter-spacing-2">Portfolio</h5>
+                <h2 class="display-4 fw-bold">Recent <span class="text-gradient">Works</span></h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="card-img-holder">
+                            <img src="https://images.pexels.com/photos/1293269/pexels-photo-1293269.jpeg?q=80&w=800&auto=format&fit=crop"
+                                class="img-fluid" alt="Project 1">
+                            <div class="card-overlay">
+                                <a href="https://github.com/rahi56/flappy_bird/tree/main/ar"
+                                    class="btn btn-light rounded-circle icon-btn"><i
+                                        class="bi bi-arrow-up-right"></i></a>
+                                <a href="https://github.com/rahi56/flappy_bird/tree/main/ar"
+                                    class="btn btn-light rounded-circle icon-btn"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-primary-subtle text-primary mb-2">Gaming</span>
+                            <h4 class="card-title fw-bold">Flappy Bird Clone</h4>
+                            <p class="text-muted">A fun Flappy Bird style game built with HTML5 Canvas and JavaScript
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="card-img-holder">
+                            <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=800&auto=format&fit=crop"
+                                class="img-fluid" alt="Project 2">
+                            <div class="card-overlay">
+                                <a href="#" class="btn btn-light rounded-circle icon-btn"><i
+                                        class="bi bi-arrow-up-right"></i></a>
+                                <a href="#" class="btn btn-light rounded-circle icon-btn"><i
+                                        class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-warning-subtle text-warning mb-2">UI Interface</span>
+                            <h4 class="card-title fw-bold">Portfolio Webapp</h4>
+                            <p class="text-muted">Attractive portfolio web application with modern design and smooth
+                                animations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="card-img-holder">
+                            <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2?q=80&w=800&auto=format&fit=crop"
+                                class="img-fluid" alt="Project 3">
+                            <div class="card-overlay">
+                                <a href="#" class="btn btn-light rounded-circle icon-btn"><i
+                                        class="bi bi-arrow-up-right"></i></a>
+                                <a href="https://github.com/rahi56/user_registration_project"
+                                    class="btn btn-light rounded-circle icon-btn"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-success-subtle text-success mb-2">Development</span>
+                            <h4 class="card-title fw-bold">User Registration System</h4>
+                            <p class="text-muted">Full functional user registration system with login and logout
+                                features.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education (Bonus - consistent structure) -->
+    <section id="education" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center" data-aos="fade-up">
+                <div class="col-lg-8 text-center mb-5">
+                    <h2 class="display-4 fw-bold">My <span class="text-gradient">Journey</span></h2>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-left">
+                    <span class="date">2023 - Present</span>
+                    <h4>B.Sc in CSE</h4>
+                    <p>Mawlana Bhashani Science and Technology University (MBSTU).</p>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <span class="date">2021 - 2022</span>
+                    <h4>Higher Secondary</h4>
+                    <p>Science Group with GPA 5.00.</p>
+                </div>
+                <!-- SSC Entry -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <span class="date">2019 - 2020</span>
+                    <h4>Secondary School Certificate</h4>
+                    <p>Science Group with GPA 5.00.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coding Skills Section -->
+    <section id="skills" class="section-padding bg-darker">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h5 class="text-primary text-uppercase letter-spacing-2">Competence</h5>
+                <h2 class="display-4 fw-bold">Coding <span class="text-gradient">Profiles</span></h2>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- LeetCode -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="project-card h-100 p-4 text-center d-flex flex-column justify-content-center align-items-center">
+                        <div class="mb-3">
+                            <i class="bi bi-code-square fs-1 text-warning"></i>
+                        </div>
+                        <h3 class="fw-bold mb-2">LeetCode</h3>
+                        <div class="display-6 fw-bold text-primary mb-2">150+</div>
+                        <p class="text-muted mb-4">Problems Solved</p>
+                        <a href="https://leetcode.com/u/rahi56/" target="_blank"
+                            class="btn btn-outline-primary rounded-pill px-4">View Profile</a>
+                    </div>
+                </div>
+
+                <!-- HackerRank -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="project-card h-100 p-4 text-center d-flex flex-column justify-content-center align-items-center">
+                        <div class="mb-3">
+                            <i class="bi bi-cpu fs-1 text-success"></i>
+                        </div>
+                        <h3 class="fw-bold mb-2">HackerRank</h3>
+                        <div class="display-6 fw-bold text-primary mb-2">5 Stars</div>
+                        <p class="text-muted mb-4">Problem Solving</p>
+                        <a href="https://www.hackerrank.com/profile/00arrahim" target="_blank"
+                            class="btn btn-outline-primary rounded-pill px-4">View Profile</a>
+                    </div>
+                </div>
+
+                <!-- Codeforces -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="project-card h-100 p-4 text-center d-flex flex-column justify-content-center align-items-center">
+                        <div class="mb-3">
+                            <i class="bi bi-graph-up-arrow fs-1 text-danger"></i>
+                        </div>
+                        <h3 class="fw-bold mb-2">Codeforces</h3>
+                        <div class="display-6 fw-bold text-primary mb-2">1000+</div>
+                        <p class="text-muted mb-4">Rating</p>
+                        <a href="https://codeforces.com/profile/rahim02ar" target="_blank"
+                            class="btn btn-outline-primary rounded-pill px-4">View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-padding bg-darker position-relative">
+        <div class="shape-blob-1"></div>
+        <div class="container position-relative z-1">
+            <div class="row g-5">
+                <!-- Contact Info Sidebar -->
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="contact-sidebar pe-lg-4">
+                        <div class="mb-5">
+                            <h5 class="text-primary text-uppercase letter-spacing-2 mb-3">Get in Touch</h5>
+                            <h2 class="display-4 fw-bold mb-4">Let's Work <span class="text-gradient">Together</span>
+                            </h2>
+                            <p class="lead text-secondary-light">
+                                Have a project in mind? Looking for a developer to help bring your ideas to life?
+                                Feel free to reach out through any of these channels.
+                            </p>
+                        </div>
+
+                        <div class="contact-details-list mb-5">
+                            <div class="contact-detail-item d-flex align-items-center mb-4">
+                                <div class="contact-detail-icon">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <span class="d-block text-muted small text-uppercase fw-bold">Email</span>
+                                    <a href="mailto:00arrahim@gmail.com"
+                                        class="text-gradient fw-semibold text-decoration-none fs-5">00arrahim@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item d-flex align-items-center mb-4">
+                                <div class="contact-detail-icon">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <span class="d-block text-muted small text-uppercase fw-bold">Phone</span>
+                                    <a href="tel:+8801825014273"
+                                        class="text-gradient fw-semibold text-decoration-none fs-5">+880 18250
+                                        14273</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item d-flex align-items-center">
+                                <div class="contact-detail-icon">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <span class="d-block text-muted small text-uppercase fw-bold">Location</span>
+                                    <span class="text-gradient fw-semibold fs-5">Tangail, Bangladesh</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social-info">
+                            <h6 class="text-white mb-3">Connect with me</h6>
+                            <div class="social-links d-flex gap-3">
+                                <a href="https://www.facebook.com/ar.rahim.33633/" class="social-icon"><i
+                                        class="bi bi-facebook"></i></a>
+                                <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/abdur-rahim-721453295/" class="social-icon"><i
+                                        class="bi bi-linkedin"></i></a>
+                                <a href="https://github.com/rahi56" class="social-icon"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="contact-form-glass shadow-lg">
+                        <form class="row g-4">
+                            <div class="col-md-6">
+                                <div class="form-group-custom">
+                                    <label for="name" class="form-label text-muted">Full Name</label>
+                                    <input type="text" class="form-control-custom" id="name"
+                                        placeholder="Enter your name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group-custom">
+                                    <label for="email" class="form-label text-muted">Email Address</label>
+                                    <input type="email" class="form-control-custom" id="email"
+                                        placeholder="name@example.com">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group-custom">
+                                    <label for="subject" class="form-label text-muted">Subject</label>
+                                    <input type="text" class="form-control-custom" id="subject"
+                                        placeholder="What is this about?">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group-custom">
+                                    <label for="message" class="form-label text-muted">Message</label>
+                                    <textarea class="form-control-custom" id="message" rows="5"
+                                        placeholder="Your message here..."></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12 text-end">
+                                <button class="btn btn-primary btn-lg custom-submit-btn" type="submit">
+                                    Send Message <i class="bi bi-arrow-right-short ms-2"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container text-center">
+            <div class="mb-4">
+                <a href="#" class="logo-text fs-3 text-decoration-none text-white">MBSTU</a>
+            </div>
+            <div class="mb-4">
+                <h6 class="text-uppercase letter-spacing-2 text-primary mb-3">Important social links</h6>
+                <div class="social-links d-flex justify-content-center gap-3">
+                    <a href="https://www.facebook.com/ar.rahim.33633/" class="social-icon"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/abdur-rahim-721453295/" class="social-icon"><i
+                            class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/rahi56" class="social-icon"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+            <p class="text-muted mb-0">&copy; 2025 Abdur Rahim. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+            easing: 'ease-out-cubic',
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                document.getElementById('navbar').classList.add('scrolled');
+            } else {
+                document.getElementById('navbar').classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
