@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Abdur Rahim - Resume</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* MAIN CONTAINER */
+.container {
+    max-width: 820px;
+    margin: 15px auto;
+    background: rgba(15, 23, 42, 0.55);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    padding: 24px 30px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow:
+        0 10px 40px rgba(0,0,0,0.5),
+        0 0 20px rgba(6,182,212,0.08);
+}
+
+/* HEADER */
+h1 {
+    text-align: center;
+    margin: 0 0 4px;
+    font-size: 2rem;
+}
+
+.contact {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* SECTIONS */
+h2 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    font-size: 1.05rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.section {
+    margin-bottom: 10px;
+    line-height: 1.45;
+    font-size: 14px;
+}
+
+.project-card {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-left: 2px solid #06b6d4;
+}
+
+ul {
+    margin: 4px 0;
+    padding-left: 18px;
+}
+
+li {
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+
+.title-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+p {
+    margin: 4px 0;
+}
+
+/* BUTTON */
+.btn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    padding: 10px 14px;
+    background: #06b6d4;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.btn:hover {
+    background: #0891b2;
+}
+
+/* BACKGROUND GLOW */
+.bg-glow {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle, rgba(6,182,212,0.2), transparent);
+    z-index: -1;
+}
+
+/* PRINT STYLES */
+@media print {
+
+    @page {
+        size: A4;
+        margin: 8mm;
+    }
+
+    .btn,
+    .bg-glow {
+        display: none;
+    }
+
+    body {
+        background: #fff !important;
+        color: #000 !important;
+        font-size: 11px;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-bottom: 2px;
+        color: #000;
+    }
+
+    h2 {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 4px;
+        color: #000;
+    }
+
+    .section,
+    .project-card,
+    li,
+    p {
+        font-size: 11px;
+        line-height: 1.25;
+        color: #000;
+    }
+
+    .project-card {
+        padding: 4px 0;
+        border: none;
+        box-shadow: none;
+        background: none;
+        margin-bottom: 4px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg-glow"></div>
+
+<button class="btn" onclick="window.print()">Download PDF</button>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <h1>Abdur Rahim</h1>
+    <div class="contact">
+        Tangail, Dhaka, Bangladesh <br/>
+        Email: 00arrahim@gmail.com |
+        Phone: +880 01825014273 |
+        GitHub:
+        <a href="https://github.com/rahi56" target="_blank" style="color:#06b6d4;">
+            github.com/rahi56
+        </a>
+    </div>
+
+    <!-- PROFILE -->
+    <h2>Profile</h2>
+    <div class="section">
+        Computer Science student with strong interest in software development, backend systems, and problem solving.
+        Experienced in Java, Python, and web frameworks like Django and Spring Boot.
+        Active in competitive programming and continuously improving algorithms and system design skills.
+    </div>
+
+    <!-- SKILLS -->
+    <h2>Technical Skills</h2>
+    <div class="section">
+        <p><b>Languages:</b> C, C++, Java, Python</p>
+        <p><b>Backend:</b> Django, Spring Boot</p>
+        <p><b>Database:</b> MySQL</p>
+        <p><b>Web:</b> HTML, CSS, JavaScript, Bootstrap</p>
+        <p><b>Tools:</b> Git, GitHub, IntelliJ IDEA, VS Code</p>
+        <p><b>Core:</b> Data Structures, Algorithms, OOP, DBMS</p>
+
+        <p><b>Competitive Programming:</b></p>
+        <ul>
+            <li>Solved 100+ problems on LeetCode</li>
+            <li>Strong practice in greedy, recursion, sorting, and graph problems</li>
+        </ul>
+    </div>
+
+    <!-- ACHIEVEMENTS -->
+    <h2>Achievements</h2>
+    <div class="section">
+        <ul>
+            <li>Participated in NDUB IUPC (Inter University Programming Contest)</li>
+            <li>Participated in IDPC (Intra Department Programming Contest)</li>
+            <li>Regular problem solver in Codeforces and LeetCode</li>
+            <li>Active on HackerRank, AtCoder, CodeChef</li>
+        </ul>
+    </div>
+
+    <!-- PROJECTS -->
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <p class="title-line">
+            <span>Ticket Booking System (JavaFX)</span>
+            <span>2025</span>
+        </p>
+        <ul>
+            <li>Desktop application built using JavaFX</li>
+            <li>Implemented login system, booking logic, and UI design</li>
+            <li>Applied OOP principles and structured design</li>
+        </ul>
+    </div>
+
+    <div class="project-card">
+        <p class="title-line">
+            <span>Web Project (KiteGlobalKG)</span>
+            <span>2025</span>
+        </p>
+        <ul>
+            <li>Responsive website using HTML, CSS, Bootstrap</li>
+            <li>Built navigation, carousel, and service layout</li>
+        </ul>
+    </div>
+
+    <div class="project-card">
+        <p class="title-line">
+            <span>Portfolio Website</span>
+            <span>2024</span>
+        </p>
+        <ul>
+            <li>Personal portfolio to showcase skills and projects</li>
+            <li>Fully responsive and hosted online</li>
+            <li>
+                Live Link:
+                <a href="https://rahi56.github.io" target="_blank" style="color:#06b6d4;">
+                    Portfolio Website
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- EDUCATION -->
+    <h2>Education</h2>
+    <div class="section">
+        <p><b>BSc in ICT</b> (2023 -- Present)</p>
+        <p>Mawlana Bhasani Science and Technology University</p>
+
+        <br/>
+
+        <p><b>Higher Secondary Certificate (HSC)</b> (2021)</p>
+        <p>Safiuddin Sarker Academy & College</p>
+    </div>
+
+</div>
+
+</body>
+</html>

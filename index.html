@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahim | Software Engineer & Backend Developer</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Portfolio of Rahim, a Software Engineer and Backend Developer specializing in Java, Spring Boot, APIs, and scalable systems.">
+    <meta name="keywords" content="Rahim, Backend Developer, Software Engineer, Spring Boot, Java, Portfolio, MBSTU">
+    
+    <!-- Icons and Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="nav-brand">
+                <i class="bi bi-terminal-fill"></i> Rahim<span>.dev</span>
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#journey" class="nav-link">Journey</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="resume.html" class="btn-outline" style="padding: 6px 16px; font-size: 0.85rem; border-radius: 6px;">Resume</a></li>
+            </ul>
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                
+                <!-- Hero Left Info -->
+                <div class="hero-content">
+                    <div class="badge-glow">
+                        <span class="pulse-dot"></span>
+                        <i class="bi bi-cpu"></i> System Architect & Developer
+                    </div>
+                    <h1>
+                        Building <span class="text-gradient-cyan-purple">Scalable Systems</span> & APIs
+                    </h1>
+                    <p>
+                        B.Sc ICT student and Backend Developer specializing in Java, Spring Boot, REST APIs, and relational databases. Focused on engineering high-performance and robust software solutions.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-glow">
+                            <i class="bi bi-code-slash"></i> View Work
+                        </a>
+                        <a href="#contact" class="btn-outline">
+                            <i class="bi bi-envelope"></i> Contact Me
+                        </a>
+                    </div>
+                    
+                    <div class="hero-tech">
+                        <span class="hero-tech-label">Stack:</span>
+                        <span class="tech-icon-badge"><i class="bi bi-filetype-java" style="color: #f89820;"></i> Java</span>
+                        <span class="tech-icon-badge"><i class="bi bi-bootstrap-fill" style="color: #6f42c1;"></i> Spring Boot</span>
+                        <span class="tech-icon-badge"><i class="bi bi-database-fill" style="color: #00758f;"></i> MySQL</span>
+                        <span class="tech-icon-badge"><i class="bi bi-box-seam-fill" style="color: #2496ed;"></i> Docker</span>
+                        <span class="tech-icon-badge"><i class="bi bi-git" style="color: #f1502f;"></i> Git</span>
+                    </div>
+                </div>
+                
+                <!-- Hero Right Media & Terminal -->
+                <div class="hero-visual">
+                    <div class="avatar-wrapper">
+                        <!-- Use local photo if available, fallback to unsplash developer style if needed -->
+                        <img src="rahim.jpg" alt="Rahim Portrait" class="avatar-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop'">
+                    </div>
+                    
+                    <!-- Floating Terminal Card -->
+                    <div class="terminal-card">
+                        <div class="terminal-header">
+                            <span class="terminal-dot dot-red"></span>
+                            <span class="terminal-dot dot-yellow"></span>
+                            <span class="terminal-dot dot-green"></span>
+                            <span class="terminal-title">rahim@backend-system: ~</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span> <span class="terminal-output">cat developer.json</span>
+                            </div>
+                            <div class="terminal-line" style="margin-left: 10px;">
+                                <span class="terminal-output">{</span>
+                            </div>
+                            <div class="terminal-line" style="margin-left: 20px;">
+                                <span class="terminal-string">"name"</span>: <span class="terminal-keyword">"Abdur Rahim"</span>,
+                            </div>
+                            <div class="terminal-line" style="margin-left: 20px;">
+                                <span class="terminal-string">"education"</span>: <span class="terminal-keyword">"B.Sc in ICT @ MBSTU"</span>,
+                            </div>
+                            <div class="terminal-line" style="margin-left: 20px;">
+                                <span class="terminal-string">"core_skills"</span>: <span class="terminal-output">[</span><span class="terminal-keyword">"Java"</span>, <span class="terminal-keyword">"Spring Boot"</span>, <span class="terminal-keyword">"APIs"</span><span class="terminal-output">]</span>,
+                            </div>
+                            <div class="terminal-line" style="margin-left: 20px;">
+                                <span class="terminal-string">"relational_dbs"</span>: <span class="terminal-output">[</span><span class="terminal-keyword">"MySQL"</span>, <span class="terminal-keyword">"PostgreSQL"</span><span class="terminal-output">]</span>,
+                            </div>
+                            <div class="terminal-line" style="margin-left: 20px;">
+                                <span class="terminal-string">"status"</span>: <span class="terminal-number">"building_microservices"</span>
+                            </div>
+                            <div class="terminal-line" style="margin-left: 10px;">
+                                <span class="terminal-output">}</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span> <span class="terminal-output"><span class="typewriter-console"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Interactive Badges -->
+                    <div class="float-badge left">
+                        <i class="bi bi-server" style="color: var(--primary);"></i>
+                        <span>REST API Active</span>
+                    </div>
+                    <div class="float-badge right">
+                        <i class="bi bi-shield-check" style="color: var(--secondary);"></i>
+                        <span>JWT Secure</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Biography</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
+            <div class="about-grid">
+                <!-- Workspace image side -->
+                <div class="about-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop" alt="Developer Setup" class="about-img">
+                </div>
+                
+                <!-- Text with Tabbed details -->
+                <div class="about-info">
+                    <div class="about-tabs-nav">
+                        <button class="tab-btn active" data-tab="story">My Story</button>
+                        <button class="tab-btn" data-tab="philosophy">Philosophy</button>
+                        <button class="tab-btn" data-tab="education">Academics</button>
+                    </div>
+                    
+                    <div class="about-tab-content">
+                        <!-- Tab 1: Story -->
+                        <div class="tab-panel active" id="tab-story">
+                            <p style="font-size: 1.05rem; margin-bottom: 15px; color: var(--text-main);">
+                                I am Abdur Rahim, a ICT student at Mawlana Bhashani Science and Technology University (MBSTU).
+                            </p>
+                            <p style="color: var(--text-muted); margin-bottom: 20px;">
+                                My engineering journey centers on backend systems. I specialize in designing structured, highly reliable architectures using Java and Spring Boot. I enjoy optimizing SQL queries, implementing secure authentication systems (like JWT), and writing robust RESTful services.
+                            </p>
+                        </div>
+                        
+                        <!-- Tab 2: Philosophy -->
+                        <div class="tab-panel" id="tab-philosophy">
+                            <ul style="list-style-type: none; display: flex; flex-direction: column; gap: 16px;">
+                                <li style="display: flex; gap: 12px; align-items: flex-start;">
+                                    <i class="bi bi-check-circle-fill" style="color: var(--primary); margin-top: 4px;"></i>
+                                    <div>
+                                        <strong>Scalability & Performance:</strong> Writing algorithms and system designs that perform efficiently under heavy loads.
+                                    </div>
+                                </li>
+                                <li style="display: flex; gap: 12px; align-items: flex-start;">
+                                    <i class="bi bi-check-circle-fill" style="color: var(--primary); margin-top: 4px;"></i>
+                                    <div>
+                                        <strong>Clean Code Architecture:</strong> Following SOLID principles and MVC patterns to ensure codebases remain maintainable and easily extensible.
+                                    </div>
+                                </li>
+                                <li style="display: flex; gap: 12px; align-items: flex-start;">
+                                    <i class="bi bi-check-circle-fill" style="color: var(--primary); margin-top: 4px;"></i>
+                                    <div>
+                                        <strong>Continuous Learning:</strong> Constantly keeping pace with backend trends, cloud-native deployments, and containerization.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Tab 3: Academics -->
+                        <div class="tab-panel" id="tab-education">
+                            <p style="font-size: 1.05rem; margin-bottom: 12px; font-weight: 600;">
+                                Mawlana Bhashani Science and Technology University (MBSTU)
+                            </p>
+                            <p style="color: var(--text-muted); margin-bottom: 15px;">
+                                Currently pursuing a B.Sc. in Information & Communication Technology (ICT). Acquired strong foundational understanding of critical software principles:
+                            </p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                <span class="tech-icon-badge">Algorithms</span>
+                                <span class="tech-icon-badge">Data Structures</span>
+                                <span class="tech-icon-badge">Database Management (DBMS)</span>
+                                <span class="tech-icon-badge">Object Oriented Programming</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">A+</span>
+                            <span class="stat-label">Academic Standing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Proficiencies</span>
+                <h2 class="section-title">Technical Expertise</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Backend Skills -->
+                <div class="card-glass">
+                    <h3 class="skills-category-title">
+                        <i class="bi bi-server"></i> Backend Engineering
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java SE/EE</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Spring Boot & MVC</span>
+                                <span class="skill-pct">80%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">RESTful API Design</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Hibernate (ORM)</span>
+                                <span class="skill-pct">75%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database & Infrastructure Skills -->
+                <div class="card-glass">
+                    <h3 class="skills-category-title">
+                        <i class="bi bi-database-fill-gear"></i> Systems & DBs
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-pct">80%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PostgreSQL / SQLite</span>
+                                <span class="skill-pct">70%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Docker (Containerization)</span>
+                                <span class="skill-pct">70%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git Version Control</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend/Tools Skills -->
+                <div class="card-glass">
+                    <h3 class="skills-category-title">
+                        <i class="bi bi-code-square"></i> Frontend & Theory
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5 / CSS3 / ES6 JS</span>
+                                <span class="skill-pct">75%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Bootstrap CSS</span>
+                                <span class="skill-pct">80%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Data Structures & Algos</span>
+                                <span class="skill-pct">80%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">System Design Basics</span>
+                                <span class="skill-pct">65%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar-progress" data-width="65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Portfolio</span>
+                <h2 class="section-title">Selected Systems & Applications</h2>
+            </div>
+            
+            <!-- Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Systems</button>
+                <button class="filter-btn" data-filter="backend">Backend & DB</button>
+                <button class="filter-btn" data-filter="games-ui">Interactive & Game</button>
+            </div>
+            
+            <!-- Cards Grid -->
+            <div class="projects-grid">
+                
+                <!-- Project 1: User Registration -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-media">
+                        <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2?q=80&w=800&auto=format&fit=crop" alt="User Registration System" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/rahi56/user_registration_project" target="_blank" class="project-action-btn" aria-label="GitHub Repository"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Backend System</span>
+                        <h3 class="project-title">User Registration & Auth</h3>
+                        <p class="project-desc">A secure, full-stack registration system built with Spring Boot, Spring Security, Hibernate ORM, and MySQL. Features password hashing, session tokens, and input validation.</p>
+                        <div class="project-tech">
+                            <span class="project-tech-tag">Spring Boot</span>
+                            <span class="project-tech-tag">MySQL</span>
+                            <span class="project-tech-tag">Security</span>
+                            <span class="project-tech-tag">Hibernate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Flappy Bird Clone -->
+                <div class="project-card" data-category="games-ui">
+                    <div class="project-media">
+                        <img src="https://images.pexels.com/photos/1293269/pexels-photo-1293269.jpeg?q=80&w=800&auto=format&fit=crop" alt="Flappy Bird Clone" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/rahi56/flappy_bird/tree/main/ar" target="_blank" class="project-action-btn" aria-label="GitHub Code"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Interactive Game</span>
+                        <h3 class="project-title">HTML5 Flappy Bird Clone</h3>
+                        <p class="project-desc">A highly responsive browser clone of the classic game, engineered utilizing native JavaScript physics, keyboard/mouse interrupt listeners, and HTML5 Canvas rendering.</p>
+                        <div class="project-tech">
+                            <span class="project-tech-tag">JavaScript</span>
+                            <span class="project-tech-tag">HTML5 Canvas</span>
+                            <span class="project-tech-tag">Physics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: JavaFX App -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-media">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=800&auto=format&fit=crop" alt="Ticket Booking System" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/rahi56" target="_blank" class="project-action-btn" aria-label="GitHub Profiles"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Desktop Systems</span>
+                        <h3 class="project-title">JavaFX Ticket Booking</h3>
+                        <p class="project-desc">A desktop ticket reservation and system manager using JavaFX for client UI, implementing the MVC architecture and integrating SQLite for low-overhead local state persistence.</p>
+                        <div class="project-tech">
+                            <span class="project-tech-tag">JavaFX</span>
+                            <span class="project-tech-tag">SQLite</span>
+                            <span class="project-tech-tag">MVC Architecture</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="journey" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Chronology</span>
+                <h2 class="section-title">My Journey</h2>
+            </div>
+            
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - Present</span>
+                        <h3 class="timeline-title">B.Sc. in ICT</h3>
+                        <p class="timeline-sub">Mawlana Bhashani Science and Technology University (MBSTU)</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            Focused on core software systems, relational database architecture, algorithms, and practical software development. Active participant in engineering project labs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 - 2022</span>
+                        <h3 class="timeline-title">Higher Secondary Education</h3>
+                        <p class="timeline-sub">Science Discipline</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            Acquired strong mathematical, algebraic, and physics foundations. Graduated with Academic Excellence and a GPA of 5.00/5.00.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Integration</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Contact info side -->
+                <div class="contact-card-info">
+                    <div class="contact-info-item">
+                        <div class="contact-icon-wrapper">
+                            <i class="bi bi-envelope-at"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Direct Mail</h4>
+                            <p>00arrahim@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon-wrapper">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Tangail, Bangladesh</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon-wrapper">
+                            <i class="bi bi-mortarboard"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Affiliation</h4>
+                            <p>MBSTU ICT Department</p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 20px;">
+                        <h4 style="margin-bottom: 12px; font-size: 0.95rem; font-family: var(--font-mono); color: var(--primary);">SYSTEM_STATUS:</h4>
+                        <div class="tech-icon-badge" style="border-color: var(--accent); color: var(--accent); background: rgba(16, 185, 129, 0.05); display: inline-flex;">
+                            <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-right: 6px; animation: pulse-status 2s infinite;"></span>
+                            Available for APIs & Software Engineering Internships
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form side -->
+                <div class="card-glass">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group-row">
+                            <div>
+                                <input type="text" id="form-name" class="form-control" placeholder="Name" required>
+                            </div>
+                            <div>
+                                <input type="email" id="form-email" class="form-control" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="text" id="form-subject" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div>
+                            <textarea id="form-message" class="form-control" placeholder="Write message details..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-glow form-submit-btn">
+                            <i class="bi bi-send-fill"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <a href="#home" class="footer-logo">
+                <i class="bi bi-terminal-fill"></i> Rahim<span>.dev</span>
+            </a>
+            
+            <div class="footer-socials">
+                <a href="https://github.com/rahi56" target="_blank" class="social-link" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/abdur-rahim-721453295/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.facebook.com/ar.rahim.33633/" target="_blank" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="mailto:00arrahim@gmail.com" class="social-link" aria-label="Email"><i class="bi bi-envelope"></i></a>
+            </div>
+            
+            <p class="footer-copy">&copy; 2026 Abdur Rahim. Designed for high performance systems.</p>
+        </div>
+    </footer>
+
+    <!-- Core Script -->
+    <script src="script.js"></script>
+</body>
+</html>
